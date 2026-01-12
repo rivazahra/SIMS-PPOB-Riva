@@ -1,3 +1,4 @@
+import { data } from 'react-router';
 import { useQuery, type UseQueryResult } from "@tanstack/react-query";
 import type { UserBalance } from "../types/user.types";
 import { api } from "./api";
@@ -7,7 +8,7 @@ export const useBalance = ():UseQueryResult<UserBalance>=>{
         queryKey:['balance'],
         queryFn: async () =>{
             const {data} = await api.get('/balance');
-            return data.data.balance;
+            return data.data;
         }
     })
 }

@@ -1,4 +1,4 @@
-import React, { type JSX } from 'react'
+import  { type JSX } from 'react'
 import { AuthLayout } from '../../components/layout/AuthLayout/AuthLayout'
 import { AtSign, Eye, EyeOff, LockKeyhole } from 'lucide-react'
 import type z from 'zod'

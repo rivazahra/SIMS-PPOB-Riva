@@ -43,7 +43,7 @@ export const updateProfileValidationSchema = z.object({
 	last_name: z.string().min(1, { message: "Last name is required" }),
 });
 
-export const  formatBalance = (amount: number | undefined): string => {
+export const  formatBalance = (amount: number): string => {
         if (typeof amount !== 'number' || isNaN(amount)) return "Rp 0";
         return `Rp ${amount.toLocaleString("id-ID")}`;
     };

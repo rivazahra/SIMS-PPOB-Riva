@@ -17,7 +17,7 @@ const MainLayout = ({children}:MainLayoutProps):JSX.Element=>{
         const { showBalance, toggleBalance } = useToggleBalance()
     
     
-        const formatBalance = (balance): string => {
+        const formatBalance = (balance:number): string => {
         if (!showBalance) return "Rp ••••••";
         
         const amount = balance;
@@ -48,7 +48,7 @@ const MainLayout = ({children}:MainLayoutProps):JSX.Element=>{
 						style={{ backgroundImage: `url(${BgSaldo})` }}>
 						<p className='text-xs md:text-sm'>Saldo anda</p>
 						<h1 className='font-bold text-lg md:text-xl'>
-                        {formatBalance(balance)}
+                        {formatBalance(balance?.balance ?? 0)}
 						</h1>
 						<button
 							type='button'

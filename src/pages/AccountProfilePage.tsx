@@ -14,7 +14,7 @@ import { Avatar } from "../assets";
 import Navbar from "../components/Navbar";
 import ProfileImageUpload from "../components/ProfileImageUpload";
 import FormField from "../components/FormField";
-import { AtSign, User, UserRound } from "lucide-react";
+import { AtSign, UserRound } from "lucide-react";
 
 type UpdateProfileFormData = z.infer<typeof updateProfileValidationSchema>;
 

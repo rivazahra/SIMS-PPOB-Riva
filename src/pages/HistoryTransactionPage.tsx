@@ -3,7 +3,7 @@ import MainLayout from "../components/layout/MainLayout";
 import { useTransactionHistory } from "../services/useTransactionHistory";
 import type { RootState } from "../store/store";
 import { addTransactions, setOffset, setTransactions } from "../store/slice/TransactionSlice";
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import { formatDate } from "../utils/validators";
 
 

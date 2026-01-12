@@ -5,7 +5,6 @@ import { Avatar, BgSaldo } from "../../assets";
 import { useProfile } from "../../services/useProfile";
 import { useBalance } from "../../services/useBalance";
 import { useToggleBalance } from "../../hooks/useToggleBalance";
-import type { UserBalance } from "../../types/user.types";
 
 type MainLayoutProps = {
     children: ReactNode;

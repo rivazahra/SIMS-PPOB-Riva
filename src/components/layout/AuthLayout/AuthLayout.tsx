@@ -1,5 +1,6 @@
-import { Wallet, AuthImg } from '@/assets'
+
 import { Link } from 'react-router';
+import { AuthImg, Wallet } from '../../../assets';
 
 interface AuthLayoutProps {
     children: React.ReactNode;

@@ -5,7 +5,7 @@ import type z from 'zod'
 import { loginFormSchema } from '../../utils/validators'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useLogin } from '../../hooks/useLogin'
+import { useLogin } from '../../services/useLogin'
 import { useShowPass } from '../../hooks/useShowPass'
 import toast from 'react-hot-toast'
 import Cookies from "js-cookie";
@@ -56,7 +56,7 @@ const LoginPage = ():JSX.Element => {
               type='email'
               placeholder='masukan email anda'
               {...register("email")}
-              className='text-gray-500'
+              className='text-gray-500 relative w-full  focus:outline-none  transition-colors duration-200"'
             />
           </div>
           {errors.email?.message && (

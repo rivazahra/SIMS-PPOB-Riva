@@ -84,7 +84,7 @@ const ServiceDetailPage = () => {
                     setModalState({
                         open: true,
                         type: "success",
-                        message: `Pembayaran ${service?.service_name} sebesar ${formatBalance(service?.service_tariff)} berhasil!`,
+                        message: `Pembayaran ${service?.service_name} sebesar ${formatBalance(service?.service_tariff ?? 0)} berhasil!`,
                     });
                 },
             }

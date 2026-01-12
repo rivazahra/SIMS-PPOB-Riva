@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import { useRegister } from "../../hooks/useRegister";
+import { useRegister } from "../../services/useRegister";
 import { useShowPass } from "../../hooks/useShowPass";
 import { useForm } from "react-hook-form";
 import { registerFormSchema } from "../../utils/validators";
